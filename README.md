@@ -1,4 +1,11 @@
-# ABAP Cloud Developer Trial
+# ABAP Cloud Developer Trial - Docker
+
+<p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/8e47601e-b754-46c5-9544-04ae2f21ca3e">
+        <img src="https://github.com/user-attachments/assets/8e47601e-b754-46c5-9544-04ae2f21ca3e" alt="OpenClaw" width="200">
+    </picture>
+</p>
 
 > [!IMPORTANT]  
 > This is a community-maintained backup. This image was originally published by SAP on Docker Hub but has since been removed or moved behind a private registry. This repository serves as a mirror to ensure the image is available for use.
