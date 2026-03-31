@@ -3,7 +3,7 @@
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/8e47601e-b754-46c5-9544-04ae2f21ca3e">
-        <img src="https://github.com/user-attachments/assets/8e47601e-b754-46c5-9544-04ae2f21ca3e" alt="OpenClaw" width="200">
+        <img src="https://github.com/user-attachments/assets/8e47601e-b754-46c5-9544-04ae2f21ca3e" alt="ABAP Cloud Developer Trial" width="200">
     </picture>
 </p>
 
