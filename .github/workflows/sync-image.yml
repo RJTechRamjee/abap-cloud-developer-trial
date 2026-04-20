@@ -1,0 +1,30 @@
+name: Sync ABAP 2023 Image
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Maximize Runner Disk Space
+        run: |
+          # Removes pre-installed software to make room for the large image layers
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+
+      - name: Install Skopeo
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y skopeo
+
+      - name: Copy Image to My GHCR
+        run: |
+          # This copies directly from likweitan to YOUR repository
+          skopeo copy \
+            --dest-creds "${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}" \
+            docker://ghcr.io/likweitan/abap-cloud-developer-trial/abap-cloud-developer-trial:2023 \
+            docker://ghcr.io/${{ github.repository_owner }}/abap-cloud-developer-trial:2023
